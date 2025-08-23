@@ -1,8 +1,8 @@
 cmake_minimum_required(VERSION 3.20)
 
-set(APP_NAME "DisplayManager")
+set(APP_NAME "displayManager")
 
-project(DisplayManager
+project(displayManager
         VERSION 1.0
         LANGUAGES CXX
 )
@@ -17,6 +17,8 @@ file(GLOB_RECURSE SOURCES CONFIGURE_DEPENDS
 )
 
 add_executable(${APP_NAME} ${SOURCES})
+set_target_properties(${APP_NAME} PROPERTIES OUTPUT_NAME "dm")
+install(TARGETS ${APP_NAME} RUNTIME DESTINATION bin)
 
 target_include_directories(${APP_NAME} PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/include)
 
