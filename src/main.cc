@@ -7,8 +7,7 @@ using std::endl;
 void get_all_displays() {
     CGDirectDisplayID ids[10];
     uint32_t display_count;
-    CGError err = CGGetActiveDisplayList(10, ids,&display_count);
-    if (err) {
+    if (const CGError err = CGGetActiveDisplayList(10, ids,&display_count)) {
         cout << "Error getting display list: " << err << endl;
     } else {
         /* success */
