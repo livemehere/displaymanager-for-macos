@@ -10,7 +10,7 @@ cmake -S . -B build -G Ninja -DCMAKE_INSTALL_PREFIX=/usr/local
 cmake --build build --config Release
 cmake --install build --config Release
 
-# Run globally (Ctrl-C | 4 to exit)
+# Run globally (Ctrl-C | last index to exit)
 dm
 # == Online Displays ==
 # [0] ID=1 bounds=(0,0,1728x1117) [Main]
