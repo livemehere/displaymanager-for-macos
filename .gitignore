@@ -1,4 +1,11 @@
 .idea
+.vscode/
+scripts/
 cmake-build-debug
 cmake-build-release
-build
+build/
+build-*/
+out/
+dist/
+compile_commands.json
+CMakeUserPresets.json
